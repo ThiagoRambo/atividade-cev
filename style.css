@@ -13,6 +13,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 
 }
 
@@ -20,7 +21,7 @@ main {
   background-color: white;
   width: 400px;
   padding: 10px;
-  margin: auto;
+  margin: 50px auto;
   border: 1px solid darkblue;
   border-radius: 15px;
 }
