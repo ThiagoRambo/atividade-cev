@@ -6,26 +6,122 @@
   box-sizing: border-box;
 }
 
+/* LINK GERAL */
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-shadow: 0px 0px 8px rgba(250, 235, 215, 0.541);
+  color: antiquewhite;
+  text-decoration: underline;
+}
+
+/* HEADER */
+
+header {
+  background-color: #121212;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.443);
+}
+
+.containerHeader {
+  text-align: center;
+  padding: 30px;
+}
+
+.containerHeader > h1 {
+  font-size: 50px;
+  color: white;
+  padding: 10px;
+  font-variant: small-caps;
+}
+
+.containerHeader > p {
+  color: white;
+  font-weight: 100;
+}
+
+/* CORPO */
+
 body {
-  height: 100vh;
-  background-color: black;
+  background-color: rgba(250, 235, 215, 0.363);
+}
+
+.containerCorpo > p {
+  margin: 30px;
+  padding: 15px;
+  line-height: 60px;
+  font-size: 35px;
+  text-align: justify;
+}
+
+/* IMG 1 */
+
+.containerImg1 {
   background-image: url('assets/img/wallpaper002.jpg');
-  background-position: center center;
+  width: auto;
+  padding: 10px;
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-
+  box-shadow: inset 0px 0px 10px #121212a4;
 }
 
-main {
-  background-color: white;
+.containerImg1 > p {
+  color: antiquewhite;
+  text-shadow: 0px 0px 8px rgba(250, 235, 215, 0.208);
+  background-color: #121212a4;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 8px black;
+
   width: 400px;
-  padding: 10px;
-  margin: 50px auto;
-  border: 1px solid darkblue;
-  border-radius: 15px;
+  margin: 30px;
+  line-height: 60px;
+  font-size: 35px;
+  text-align: justify;
 }
 
-h1, p {
+/* IMG 2 */
+
+.containerImg2 {
+  background-image: url('assets/img/pexels-pixabay-121472.jpg');
+  width: auto;
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0px 0px 10px #121212a4;
+}
+
+.containerImg2 > p {
+  color: antiquewhite;
+  text-shadow: 0px 0px 8px rgba(250, 235, 215, 0.208);
+  background-color: #121212a4;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 8px black;
+
+  width: 400px;
+  margin: 30px;
+  line-height: 60px;
+  font-size: 35px;
+  text-align: justify;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #121212;
   text-align: center;
+  padding: 5px;
+}
+
+footer > p {
+  color: white;
 }
