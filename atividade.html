@@ -11,68 +11,103 @@
     border-collapse: collapse;
   }
   tr, td, th {
-    border: 1px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     padding: 10px;
+  }
+
+  .gradHead {
+    background-color: rgb(75, 75, 75);
+    color: white;
+    padding: 3px 5px;
+  }
+
+  .gradResultado {
+    background-color: rgb(75, 75, 75);
+    color: white;
+    padding: 10px;
+    text-align: start;
   }
  
   
 </style>
+
 <body>
   <table>
-    
+
     <thead>
       <tr>
-        <th scope="col">Grupo</th>
-        <th scope="col">Nomes</th>
-        <th scope="colgroup" colspan="3">Filmes</th>
+        <th scope="row" class="gradHead" rowspan="2">Area</th>
+        <th scope="row" class="gradHead" rowspan="2">Disciplina</th>
+        <th scope="rowgroup" class="gradHead" colspan="2">Notas</th>
+        <th scope="row" class="gradHead" rowspan="2">Media</th>
+      </tr>
+      <tr>
+        <th scope="row" class="gradHead">Nota 1</th>
+        <th scope="row" class="gradHead">Nota 2</th>
       </tr>
     </thead>
-    
+
     <tbody>
+
+      <!-- Exatas -->
       <tr>
-        <th scope="rowgroup" rowspan="3">Mulheres</th>
-        <td>Ana Maria Santos</td>
-        <td>Alien</td>
-        <td>Rambo</td>
-        <td>Vingadores</td>
+        <th scope="colgroup" rowspan="4">Exatas</th>
+        <td>Matematica</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
       </tr>
 
       <tr>
-        <td>Beatriz</td>
-        <td>Hulk</td>
-        <td>Inception</td>
-        <td>Batman</td>
+        <td>Fisica</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
       </tr>
+
       <tr>
-        <td>Claudia</td>
-        <td>Oblivion</td>
-        <td>Matrix</td>
-        <td>Big Hero</td>
+        <td>Quimica</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
       </tr>
+
       <tr>
-        <th scope="rowgroup" rowspan="3">Homens</th>
-        <td>Bruno Mendonça</td>
-        <td>Intocaveis</td>
-        <td>Amnesia</td>
-        <td>Gladiador</td>
+        <td>Biologia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
       </tr>
+  
       <tr>
-        <td>Daniel Lourenço</td>
-        <td>Wall-e</td>
-        <td>Oldboy</td>
-        <td>Dangal</td>
+        <th scope="col" class="gradResultado" colspan="4">Media de Exatas</th>
+        <td>0.0</td>
       </tr>
+
+      <!-- Humanas -->
+
       <tr>
-        <td>Fabiano Mota</td>
-        <td>Star Wars 5</td>
-        <td>Taxi Driver</td>
-        <td>Toy Story</td>
+        <th scope="colgroup" rowspan="3">Humanas</th>
+        <td>Historia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+      <tr>
+
+      <tr>
+        <td>Biologia</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
       </tr>
+
+      <tr>
+        <th scope="col" class="gradResultado" colspan="4">Media de Exatas</th>
+        <td>0.0</td>
+      </tr>
+      
+
     </tbody>
-
-
-
-
 
   </table>
 
