@@ -3,36 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario</title>
-  <style>
-    div {
-      margin: 5px;
-    }
-  </style>
+  <title>Exemplo formulario</title>
 </head>
 <body>
-  <h1>Exemplo de Formulario</h1>
+  
   <form action="cadastro.php" method="get" autocomplete="on">
 
-    <div>
-      <label for="inome">Nome:</label>
-      <input type="text" name="nome" id="inome" required autocomplete="username" maxlength="20">
-    </div>
+    <fieldset>
+      <legend>Sexo</legend>
+      <input type="radio" name="sexo" id="isexm" value="M"> <label for="isexm">Masculino</label> <br>
+      <input type="radio" name="sexo" id="isexf" value="F"> <label for="isexf">Feminino</label>
+    </fieldset>
 
-    <div>
-      <label for="iemail">E-mail:</label>
-      <input type="email" name="email" id="iemail" autocomplete="email" required>
-    </div>
 
-    <div>
-      <label for="itel">Telefone:</label>
-      <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(XX) X XXXX-XXXX">
-    </div>
+    <fieldset>
+      <legend>Esportes</legend>
+      <label for="iesfut">
+        <input type="checkbox" name="esfut" id="iesfut"> Futebol <br>
+      </label>
+      <input type="checkbox" name="esbas" id="iesbas"> Basquete <br>
+      <input type="checkbox" name="esvol" id="iesvol"> Volei <br>
+      <input type="checkbox" name="esnat" id="iesnat"> Natação <br>
+      <input type="checkbox" name="esten" id="iesten"> Tênis <br>
 
-    <div>
-      <input type="submit" value="Enviar">
-      <input type="reset" value="Limpar">
-    </div>
+    </fieldset>
+  
+      <div>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+      </div>
 
   </form>
   
